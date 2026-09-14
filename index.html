@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quelle taille de tableau choisir pour son mur ? | Calculateur gratuit</title>
+
+  <meta name="description" content="Calculez gratuitement la taille idéale d'un tableau selon la largeur de votre mur. Un outil simple pour obtenir des proportions harmonieuses dans votre décoration.">
+
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f3ef;
+      color: #202020;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 60px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 45px;
+      border-radius: 18px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.15;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      font-size: 25px;
+    }
+
+    .intro {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 35px;
+    }
+
+    .calculator {
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 12px;
+      margin: 30px 0;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      background: #111;
+      color: white;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #333;
+    }
+
+    #resultat {
+      display: none;
+      margin-top: 25px;
+      padding: 22px;
+      background: white;
+      border-left: 5px solid #111;
+      border-radius: 5px;
+    }
+
+    .big {
+      font-size: 27px;
+      font-weight: bold;
+    }
+
+    .tip {
+      padding: 20px;
+      background: #f5f3ef;
+      border-radius: 10px;
+      margin: 25px 0;
+    }
+
+    a {
+      color: #111;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 35px;
+      color: #777;
+      font-size: 14px;
+    }
+
+    @media(max-width:600px) {
+      .container {
+        margin: 20px auto;
+      }
+
+      .card {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <h1>Quelle taille de tableau choisir pour son mur ?</h1>
+
+    <p class="intro">
+      Un tableau trop petit peut sembler perdu sur un grand mur, tandis qu'une œuvre trop imposante
+      risque de déséquilibrer la pièce. Indiquez simplement la largeur de votre mur pour obtenir
+      une estimation des dimensions adaptées.
+    </p>
+
+    <div class="calculator">
+
+      <label for="largeur">
+        Largeur de votre mur en centimètres :
+      </label>
+
+      <input
+        type="number"
+        id="largeur"
+        placeholder="Exemple : 300"
+        min="50"
+        max="1500"
+      >
+
+      <button onclick="calculer()">
+        Calculer la taille idéale
+      </button>
+
+      <div id="resultat"></div>
+
+    </div>
+
+    <h2>Comment déterminer la bonne taille ?</h2>
+
+    <p>
+      Pour créer un ensemble visuellement équilibré, une œuvre murale peut généralement
+      occuper environ <strong>50 à 70 % de la largeur disponible</strong>. Cette règle
+      n'est évidemment pas absolue : le mobilier, la hauteur sous plafond et l'effet
+      recherché doivent également être pris en compte.
+    </p>
+
+    <div class="tip">
+      <strong>Exemple :</strong> pour un mur de 300 cm de large, un tableau d'environ
+      150 à 210 cm peut créer un effet particulièrement spectaculaire. Dans un intérieur
+      plus minimaliste, une œuvre plus petite permettra de conserver davantage d'espace
+      visuel autour du tableau.
+    </div>
+
+    <h2>Et au-dessus d'un canapé ?</h2>
+
+    <p>
+      Dans ce cas, prenez plutôt comme référence la largeur du canapé que celle du mur.
+      Une œuvre représentant approximativement les deux tiers de sa largeur crée généralement
+      une composition équilibrée.
+    </p>
+
+    <h2>Grand tableau ou composition de plusieurs œuvres ?</h2>
+
+    <p>
+      Un grand format crée immédiatement un point focal dans la pièce. Plusieurs œuvres
+      permettent au contraire de construire une composition plus libre. Dans les deux cas,
+      pensez à considérer l'ensemble de la composition comme une seule surface lorsque vous
+      calculez ses proportions par rapport au mur.
+    </p>
+
+    <h2>Trouver un tableau adapté à votre intérieur</h2>
+
+    <p>
+      Ce calculateur a été conçu par
+      <a href="https://www.iconik-art.com/" target="_blank">
+        Iconik-Art
+      </a>,
+      studio créatif français spécialisé dans les œuvres décoratives contemporaines.
+      Vous pouvez également découvrir une sélection de
+      <a href="https://www.iconik-art.com/collections/tableau-mural" target="_blank">
+        tableaux muraux pour personnaliser votre intérieur
+      </a>.
+    </p>
+
+  </div>
+
+  <footer>
+    Outil gratuit de conseil en décoration intérieure.
+  </footer>
+
+</div>
+
+<script>
+function calculer() {
+
+  const largeur = parseFloat(document.getElementById("largeur").value);
+  const resultat = document.getElementById("resultat");
+
+  if (!largeur || largeur < 50) {
+    resultat.style.display = "block";
+    resultat.innerHTML = "Veuillez indiquer une largeur de mur valide.";
+    return;
+  }
+
+  const mini = Math.round(largeur * 0.50);
+  const ideal = Math.round(largeur * 0.60);
+  const maxi = Math.round(largeur * 0.70);
+
+  resultat.style.display = "block";
+
+  resultat.innerHTML =
+    "<strong>Taille recommandée :</strong><br>" +
+    "<span class='big'>" + mini + " à " + maxi + " cm</span><br><br>" +
+    "Pour un équilibre classique, visez environ <strong>" +
+    ideal + " cm de largeur</strong>.";
+}
+</script>
+
+</body>
+</html>
